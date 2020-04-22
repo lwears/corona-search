@@ -7,7 +7,7 @@ const state = {
 // Helper Functions
 
 const fetchData = async () => {
-  const response = await fetch('https://cov19.cc/report.json', { mode: 'no-cors' });
+  const response = await fetch('https://cov19.cc/report.json');
   return response.json();
 };
 
