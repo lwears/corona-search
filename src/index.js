@@ -48,19 +48,14 @@ const render = (htmlString, el) => {
 
 function ac(value) {
   document.getElementById('datalist').innerHTML = '';
-  // setting datalist empty at the start of function
-  // if we skip this step, same name will be repeated
-  // input query length
+
   for (let i = 0; i < state.countries.length; i += 1) {
     if (state.countries[i].toLowerCase().indexOf(value.toLowerCase()) > -1) {
-      // comparing if input string is existing in tags[i] string
-
       const node = document.createElement('option');
       const val = document.createTextNode(state.countries[i]);
       node.appendChild(val);
 
       document.getElementById('datalist').appendChild(node);
-      // creating and appending new elements in data list
     }
   }
 }
