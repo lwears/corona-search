@@ -51,7 +51,7 @@ function ac(value) {
   // setting datalist empty at the start of function
   // if we skip this step, same name will be repeated
   // input query length
-  for (let i = 0; i < state.countries.length; i++) {
+  for (let i = 0; i < state.countries.length; i += 1) {
     if (state.countries[i].toLowerCase().indexOf(value.toLowerCase()) > -1) {
       // comparing if input string is existing in tags[i] string
 
